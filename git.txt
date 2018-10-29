@@ -1,0 +1,21 @@
+1. 配置用户名 git config --global user.name "demiliwenwen"
+2. 配置邮箱   git config --global user.email "1062942818@qq.com"
+3. 查看配置信息 git config --list
+4. 进入目录 cd（把文件夹拉进来）
+5. 查看当前目录 pwd 
+6. 初始化本地仓库 git init 
+7. 添加文件  git add *  （添加所有文件）git add  文件列表（可以是单个文件，也可以是多个文件、以空格的形式隔开）
+8. git commit -m "提示信息"(提交特定文件)  git commit -a -m '备注信息' 【绕过暂存区直接提交】
+9. git status 查看仓库的文件状态
+10. git diff 查看修改内容
+11. git log 可以显示从最近到最远的日志   git log --pretty=oneline(查看的样式)
+12. git reset --hard HEAD^ 回退上一版本(HEAD^^ 回退上上版本,HEAD~100 回退到上100版本, git reset --hard a2f575 回退具体版本号)
+13.git reflog 记录每一次命令（可根据命令前面的版本号回退版本）
+14.git checkout -- fileName a.如果fileName文件自修改后还没有被放到暂存区，现在，撤销修改就会回到和版本库一模一样的状态。b.如果fileName文件已经添加到暂存区后，又做了修改，现在，撤销修改就回到暂存区后的状态。总之就是让这个fileName文件回到最后一次git commit或者git add时的状态
+15.创建SSH Key
+	a.黑屏终端输入ssh-Keygen -t rsa -C "你自己GitHub的注册邮箱"
+	b.记录.shh目录位置(/c/Users/Administrator/.ssh)
+	c.输入GitHub注册密码（注意：秘闻输入，黑屏终端上不会显示密码）
+	d..ssh (id_rsa 私钥  id_rsa.pub 公钥)
+	e.cat id_rsa.pub(保存公钥)
+16.登录官网  https://github.com  点击右上角 选择settings-SSH and GPG keys-new ssh key-粘贴公钥-测试秘钥是否通过 ssh -T git@github.com-yes(官网钥匙变为绿色)

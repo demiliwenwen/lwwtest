@@ -21,13 +21,10 @@
 16.登录官网  https://github.com  点击右上角 选择settings-SSH and GPG keys-new ssh key-粘贴公钥-测试秘钥是否通过 ssh -T git@github.com-yes(官网钥匙变为绿色)
 17.git pull --rebase origin master 把README.md拉到本地
 18.git push -u origin master 输入用户名密码  文件上传成功 
-
+19.合并分支 git merge 分支名称
 
 
 删除关联：git remote rm origin
 开发时先有远程库 git clone 地址
 创建文件 touch .gitignore touch bao
 忽略特殊文件   .gitignore（把文件（bao）名添加到.gitignore 文件不会被推送GitHub）
-
-
-合并分支 git merge 分支名称

@@ -14,7 +14,7 @@
 14.git checkout -- fileName a.如果fileName文件自修改后还没有被放到暂存区，现在，撤销修改就会回到和版本库一模一样的状态。b.如果fileName文件已经添加到暂存区后，又做了修改，现在，撤销修改就回到暂存区后的状态。总之就是让这个fileName文件回到最后一次git commit或者git add时的状态
 15.创建SSH Key
 	a.黑屏终端输入ssh-Keygen -t rsa -C "你自己GitHub的注册邮箱"
-	b.记录.shh目录位置(/c/Users/Administrator/.ssh)
+	b.记录.ssh目录位置(/c/Users/Administrator/.ssh)
 	c.输入GitHub注册密码（注意：秘闻输入，黑屏终端上不会显示密码）
 	d..ssh (id_rsa 私钥  id_rsa.pub 公钥)
 	e.cat id_rsa.pub(保存公钥)
@@ -28,3 +28,6 @@
 开发时先有远程库 git clone 地址
 创建文件 touch .gitignore touch bao
 忽略特殊文件   .gitignore（把文件（bao）名添加到.gitignore 文件不会被推送GitHub）
+
+
+合并分支 git merge 分支名称
